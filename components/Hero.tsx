@@ -2,14 +2,17 @@ import React from 'react';
 import { ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  // Sử dụng prompt chi tiết của bạn để tạo ảnh bìa Hà Nội cổ
+  const heroImage = "https://i.pinimg.com/736x/3f/33/89/3f3389dfe22f751628cfeb2bcc8352a9.jpg";
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax-like effect */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://picsum.photos/seed/hanoistreet/1920/1080" 
-          alt="Hanoi Street Food" 
-          className="w-full h-full object-cover filter brightness-[0.6] sepia-[0.3]"
+          src={heroImage}
+          alt="Hanoi Street Food Banner" 
+          className="w-full h-full object-cover filter brightness-[0.7] sepia-[0.2]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-hanoi-bg via-transparent to-black/40"></div>
       </div>
